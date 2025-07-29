@@ -1,0 +1,224 @@
+/* BASIC FORMATTING */
+
+body {
+    background-image: url(https://i.imgur.com/zBWluIQ.png);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 25px 200px;
+    padding: 10px;
+    
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(250, 250, 255);
+}
+
+h2 {
+    color: rgb(250, 250, 255);
+}
+
+p {
+    color: rgb(250, 250, 255);
+}
+
+b {
+    color: rgb(250, 250, 255);
+}
+
+/* LINK STUFF */
+
+a:link {
+    color:rgb(208, 208, 247)
+}
+
+a:visited {
+    color:rgb(23, 43, 117)
+}
+
+a:hover {
+    color:rgb(37, 41, 126)
+}
+
+a:active {
+    color:rgb(0, 204, 44)
+}
+
+/* SOLID COLOR BACKGROUND */
+
+.marginthing {
+    background-color: rgb(121, 127, 144);
+    padding: 25px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(228, 217, 255);
+}
+
+/* CENTERED NAVIGATION STUFF */
+
+.centered {
+    text-align: center;
+}
+
+.signature {
+    text-align: right;
+    margin-right: 150px;
+}
+
+/* SIDE NAV */
+
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00000081;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidenav a {
+    padding: 6px 6px 6px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #969696;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* BLOG */
+
+  div.blogpost {
+    h3 {
+        color: rgb(250, 250, 255);
+    }
+    p {
+        color: rgb(250, 250, 255);
+    }
+    background-color: rgb(82, 87, 100);
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(228, 217, 255);
+}
+div.updatesadded {
+    background-color: rgb(34, 153, 52);
+    p {
+        color:rgb(250, 250, 255)
+    }
+}
+div.updatesedited {
+    background-color: rgb(199, 176, 0);
+    p {
+        color:rgb(250, 250, 255)
+    }
+}
+
+/* BUTTONS */
+
+.button {
+    color:rgb(250, 250, 255)
+  }
+
+  /* TABLE STUFF */
+
+.sr-only { /* hides some stuff */
+    position: absolute;
+    top: -30em;
+  }
+  
+  table.sortable td,
+  table.sortable th {
+    padding: 0.25em 0.25em; /* deals with the padding of text in each cell*/
+    width: 8em; /* unsure tbh */
+  }
+  
+  table.sortable th {
+    font-weight: bold;
+    border-bottom: thin solid #ffffff;
+    position: relative;
+  }
+  
+  /*table.sortable th.no-sort {
+    padding-top: 0.35em;
+  }*/
+  
+  /*table.sortable th:nth-child(5) {
+    width: 10em;
+  }*/
+  
+  table.sortable th button {
+    padding: 4px;
+    margin: 1px;
+    font-size: 100%;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    display: inline;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /*table.sortable th button span {
+    position: absolute;
+    right: 4px;
+  }*/
+  
+  table.sortable th[aria-sort="descending"] span::after {
+    content: "▼";
+    color: currentcolor;
+    font-size: 100%;
+    top: 0;
+  }
+  
+  table.sortable th[aria-sort="ascending"] span::after {
+    content: "▲";
+    color: currentcolor;
+    font-size: 100%;
+    top: 0;
+  }
+  
+  /*table.show-unsorted-icon th:not([aria-sort]) button span::after {
+    content: "♢";
+    color: currentcolor;
+    font-size: 100%;
+    position: relative;
+    top: -3px;
+    left: -4px;
+  }*/
+  
+  /*table.sortable td.num {
+    text-align: right;
+  }*/
+  
+  /*table.sortable tbody tr:nth-child(odd) {
+    background-color: #ddd;
+  }
+  
+  /* Focus and hover styling */
+  
+  table.sortable th button:focus,
+  table.sortable th button:hover {
+    padding: 3px;
+    border: 1px solid currentcolor;
+    background-color: #707070;
+  }
