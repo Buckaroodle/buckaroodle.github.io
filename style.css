@@ -57,6 +57,11 @@ a:active {
     border-color: rgb(228, 217, 255);
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /* CENTERED NAVIGATION STUFF */
 
 .centered {
