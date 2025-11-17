@@ -89,31 +89,50 @@ a:active {
     background-color: #00000081;
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  .sidenav a {
+}
+.sidenav a {
     padding: 6px 6px 6px 10px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     display: block;
-  }
+}
   
-  .sidenav a:hover {
+.sidenav a:hover {
     color: #969696;
-  }
+}
   
-  .main {
+.main {
     margin-left: 200px; /* Same as the width of the sidenav */
-  }
+}
   
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around; 
+  gap: 15px;
+  margin: 0 auto; 
+  max-width: 900px; /* Adjust this to control the overall width */
+}
+
+.image-gallery a {
+  /* Ensures the link tag doesn't interfere with the image's width */
+  text-decoration: none; 
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto; 
+  flex-grow: 1; 
+}
 
   /* BLOG */
 
-  div.blogpost {
+div.blogpost {
     h3 {
         color: rgb(250, 250, 255);
     }
