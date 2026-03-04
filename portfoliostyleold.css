@@ -57,6 +57,21 @@ a:active {
     border-color: rgb(228, 217, 255);
 }
 
+.project {
+    background-color: #20203d;
+    padding: 25px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(228, 217, 255);
+    img {
+        float: right;
+    }
+    overflow: hidden;
+    &:hover {
+          transform: scale(1.03);
+        }
+}
+
 .project-link {
     text-decoration: none;
     display: block;
@@ -64,12 +79,16 @@ a:active {
 }
 
 .slideshow-container {
+  /*max-width: 1000px;
+  /*position: relative;
+  /*margin: auto;*/
   img {
     float: right
   }
 }
 
 .mySlides {
+  /*display: none;*/
   img {
     float: right
   }
@@ -221,33 +240,14 @@ div.updatesedited {
 
 /* FADE ANIMATION */
 .project {
-    background-color: #20203d;
-    padding: 25px;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: rgb(228, 217, 255);
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Fixed the comma to a period */
-}
-
-.project-wrapper {
-    display: none; /* Hidden by default for Tab logic */
-    margin-bottom: 30px;
-    animation: fadeIn 0.5s ease-out forwards;
-}
-
-.project-link:hover .project {
-    transform: scale(1.03);
-    cursor: pointer;
+    display: none; /* Hidden by default, JS will show 'Finished' */
+    animation: fadeIn 0.5s forwards;
+    &:hover {
+          transform: scale(1.03);
+        }
 }
 
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(10px); 
-    }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

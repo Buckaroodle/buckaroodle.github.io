@@ -52,3 +52,30 @@ function showSlides(n, slideshowId) {
   slides[slideIndexes[slideshowId] - 1].classList.remove("hidden-slide");
   dots[slideIndexes[slideshowId] - 1].className += " active";
 }
+
+function filterProjects(category, button) {
+    // 1. Handle Button Scaling/Active Class
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    // 2. Filter Projects
+    const projects = document.querySelectorAll('.project');
+    
+    projects.forEach(project => {
+        // Reset animation by removing and re-adding if necessary
+        project.style.display = 'none'; 
+        
+        if (project.classList.contains(category)) {
+            project.style.display = 'block';
+        }
+    });
+}
+
+// Set default view to 'Finished' on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const defaultBtn = document.querySelector('.tab-btn.active');
+    if (defaultBtn) {
+        filterProjects('Finished', defaultBtn);
+    }
+});
