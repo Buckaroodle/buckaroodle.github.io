@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crossword Database</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Buck's Crossword Database</h1>
+      <h2>Creator</h2>
+      <h2>2022 - Present</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_crossword1.png">
+        <img class="mySlides" src="portfolio_crossword2.png">
+        <img class="mySlides" src="portfolio_crossword3.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Code used:</b> HTML, CSS, JavaScript
+      </p>
+      <p>
+        Since 2022, I have been creating crossword puzzles in my free time. In early 2024, I created a website from scratch using HTML code to host all my puzzles for free. I create the puzzles using a website called Crosserville and upload them to a site called Squares.io, which allows me to embed them in my website. My website is still regularly updated with new crosswords being added.
+      </p>
+      <p>
+        <a href="https://buckscrosswords.xyz/">Click here to access the website!</a>
+      </p>
+    </div>
+  </body>
+</html>

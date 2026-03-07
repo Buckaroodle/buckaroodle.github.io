@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rogueshambo</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Rogueshambo</h1>
+      <h2>Team RPS - Lead Coder</h2>
+      <h2>Aug 2025 - Dec 2025</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_rogueshambo1.png">
+        <img class="mySlides" src="portfolio_rogueshambo2.png">
+        <img class="mySlides" src="portfolio_rogueshambo4.png">
+        <img class="mySlides" src="portfolio_rogueshambo5.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Engine:</b> Unity
+      </p>
+      <p>
+        I was the primary coder for this project and worked closely alongside the designers and producer to make all the game's mechanics work properly. I coded all of the scripts used in the game in C# and annotated all my code to make it easier for designers to edit and manipulate it.
+      </p>
+      <p>
+        <a href="https://buckaroodle.itch.io/rogueshambo">Click here to access the itch.io page!</a>
+      </p>
+    </div>
+  </body>
+</html>

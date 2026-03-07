@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordfall</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Wordfall (working title)</h1>
+      <h2>Creator</h2>
+      <h2>Feb 2026 - Present</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_wordfall1.png">
+        <img class="mySlides" src="portfolio_wordfall2.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Engine:</b> Godot
+      </p>
+      <p>
+        This is a game idea I've had for a while that I originally prototyped with Scrabble tiles. I wrote all the code myself but had a bit of assistance from some professional coders who helped me find the best way to attack the project. Future plans for this project include adding a settings and options menu that allow you to change various aspects of gameplay along with multiple preset game modes.
+      </p>
+      <p>
+        The game is currently under development and a public beta of the game is expected to release on itch.io in May 2026.
+      </p>
+    </div>
+  </body>
+</html>

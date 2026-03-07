@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermoflux</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Thermoflux</h1>
+      <h2>Forward Slash Studios - Lead Designer</h2>
+      <h2>Mar 2025 - Apr 2025</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_thermoflux2.png">
+        <img class="mySlides" src="portfolio_thermoflux3.png">
+        <img class="mySlides" src="portfolio_thermoflux4.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Engine:</b> Unity
+      </p>
+      <p>
+        I was the lead designer for this project and headed most parts of level whiteboxing. I oversaw the creation of each of the game's levels and was crucial in playtesting to make sure levels worked properly. I also created the game's menus and menu UI.
+      </p>
+      <p>
+        <a href="https://rangerhalt.itch.io/thermoflux">Click here to access the itch.io page!</a>
+      </p>
+    </div>
+  </body>
+</html>

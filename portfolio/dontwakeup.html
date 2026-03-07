@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Don't Wake Up</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Don't Wake Up</h1>
+      <h2>Designer</h2>
+      <h2>Nov 2024</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_dwu2.png">
+        <img class="mySlides" src="portfolio_dwu3.png">
+        <img class="mySlides" src="portfolio_dwu4.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Engine:</b> Unity
+      </p>
+      <p>
+        I was one of two designers for this game created during a 48 hour game jam. Preston Ferrer and I worked together to design the layout of the house you traverse. After getting the assets, I created the house in Unity. I had to get creative in some areas as I wasn't given all the assets we had needed, so in many places I had to improvise and "create" new assets by combining different assets together
+      </p>
+      <p>
+        <a href="https://monopopo.itch.io/dont-wake-up">Click here to access the itch.io page!</a>
+      </p>
+    </div>
+  </body>
+</html>

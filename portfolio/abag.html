@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anything But a Gun</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Anything But a Gun</h1>
+      <h2>Forward Slash Studios - Designer</h2>
+      <h2>Aug 2025 - Present</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_abag1.png">
+        <img class="mySlides" src="portfolio_abag2.png">
+        <img class="mySlides" src="portfolio_abag3.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Engine:</b> Unity
+      </p>
+      <p>
+        We are currently designing this game in Unity. My biggest contributions to the project thus far have been implementing SFX and particle systems to the game to give it some much needed flair. Certain sound effects in the game I have found for free online, however, in a lot of cases, I resort to creating sound effects myself in Audacity because I want a sound that I cannot find anywhere else. Specific particle systems used in the game (such as the calligraphy brush's attack effect) were created by me with the help of fellow designer Jaime Abrego.
+      </p>
+      <p>
+        The game is expected to release in May 2026 on Steam!
+      </p>
+    </div>
+  </body>
+</html>

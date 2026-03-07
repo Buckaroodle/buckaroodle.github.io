@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fsh</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Fsh</h1>
+      <h2>Designer</h2>
+      <h2>Mar 2024</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_fsh1.png">
+        <img class="mySlides" src="portfolio_fsh2.jpg">
+        <img class="mySlides" src="portfolio_fsh3.png">
+        <img class="mySlides" src="portfolio_fsh4.png">
+        <img class="mySlides" src="portfolio_fsh5.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Engine:</b> Unity
+      </p>
+      <p>
+        I was the only designer for this game made for the GDK Joint Jam 2024. Once we settled on the general idea for the game, I immediately got started designing the game's single stage on a piece of notebook paper. The game was originally supposed to be in the darkness with only the player's small candle allowing illumination, but this unfortunately got cut last minute. Because of this, the platforms were specifically arranged in a way that would eliminate blind jumps and always guide you towards the next obstacle.
+      </p>
+      <p>
+        <a href="https://sadier102.itch.io/fsh">Click here to access the itch.io page!</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -9,20 +9,63 @@
     <div class="marginthing">
       <h1>Aaron Lurie's Portfolio</h1>
       <p style="text-indent:30px;">
-        <b>Hello, I'm Aaron Lurie!</b> I am a current senior at UCF majoring in Digital Media Game Design. In the last four years, I have worked on a lot of different projects and specialize in level design as well as menu UI. Provided below are some examples of some of the projects I've worked on throughout the past few years. Click the buttons to cycle through various screenshots and pictures of my work!
+        <b>Hello, I'm Aaron Lurie!</b> I am a current senior at UCF majoring in Digital Media Game Design. In the last four years, I have worked on a lot of different projects and specialize in level design as well as menu UI. Provided below are some examples of some of the projects I've worked on throughout the past few years. You can view my professional work under the "Featured" tab, along with some unfinished and more casual projects under the "In Progress" and "Extra" tabs.
       </p>
       <div class="tab-container">
-        <button class="tab-btn active" onclick="filterProjects('Finished', this)">Finished</button>
-        <button class="tab-btn" onclick="filterProjects('WIP', this)">WIP</button>
-        <button class="tab-btn" onclick="filterProjects('Other', this)">Other</button>
+        <button class="tab-btn active" onclick="filterProjects('Finished', this)">Featured</button>
+        <button class="tab-btn" onclick="filterProjects('WIP', this)">In Progress</button>
+        <button class="tab-btn" onclick="filterProjects('Other', this)">Extra</button>
       </div>
-      <a href="https://buckaroodle.itch.io/rogueshambo" class="project-link"> <!-- contain whole project in <a> link -->
-        <div class="project Finished"> <!-- define class to choose which tab the project is labeled under -->
-          <div class="mySlides"> <!-- put picture under mySlides class to format it correctly -->
-            <img src="portfolio/portfolio_crossword1.png" alt="Crossword Website Logo" style="width:384px;height:216px;">
+      <a href="portfolio/abag.html" class="project-link">
+        <div class="project WIP hide-on-start">
+          <div class="slideshowpic">
+            <div class="slideshow-container" id="slideshow4">
+              <div class="mySlides">
+                <img src="portfolio/portfolio_abag1.png" alt="ABAG Title Screen" style="width:384px;height:216px;">
+              </div>
+            </div>
           </div>
           <h1>
-            CROSSWORD DATABASE
+            ANYTHING BUT A GUN
+          </h1>
+          <h2>
+            Forward Slash Studios - Designer
+          </h2>
+          <br>
+          <p style="text-align: center;">
+            Use wacky weapons to fight your way to the top of the corporate ladder!
+          </p>
+        </div>
+      </a>
+      <a href="portfolio/wordfall.html" class="project-link">
+        <div class="project WIP hide-on-start">
+          <div class="slideshowpic">
+            <div class="slideshow-container" id="slideshow3">
+              <div class="mySlides">
+                <img src="portfolio/portfolio_wordfall1.png" alt="Wordfall gameplay" style="width:384px;height:216px;">
+              </div>
+            </div>
+          </div>
+          <h1>
+            WORDFALL
+          </h1>
+          <h2>
+            Creator
+          </h2>
+          <p style="text-align: center;">
+            Find the longest and highest-scoring words you can!
+          </p>
+        </div>
+      </a>
+      <a href="portfolio/crossworddatabase.html" class="project-link"> <!-- contain whole project in <a> link -->
+        <div class="project Finished"> <!-- define class to choose which tab the project is labeled under -->
+          <div class="slideshow-container" id="slideshow1">
+            <div class="mySlides"> <!-- put picture under mySlides class to format it correctly -->
+              <img src="portfolio/portfolio_crossword1.png" alt="Crossword Website Logo" style="width:384px;height:216px;">
+            </div>
+          </div>
+          <h1>
+            BUCK'S CROSSWORD DATABASE
           </h1>
           <h2>
             Creator/Designer
@@ -33,8 +76,7 @@
           </p>
         </div>
       </a>
-      <br>
-      <a href="https://buckaroodle.itch.io/rogueshambo" class="project-link">
+      <a href="portfolio/rogueshambo.html" class="project-link">
         <div class="project Finished">
           <div class="slideshowpic">
             <div class="slideshow-container" id="slideshow4">
@@ -55,8 +97,7 @@
           </p>
         </div>
       </a>
-      <br>
-      <a href="https://buckaroodle.itch.io/rogueshambo" class="project-link">
+      <a href="portfolio/thermoflux.html" class="project-link">
         <div class="project Finished">
           <div class="slideshowpic">
             <div class="slideshow-container" id="slideshow2">
@@ -72,14 +113,13 @@
             Forward Slash Studios - Lead Designer
           </h2>
           <br>
-          <p style="text-indent:30px;">
+          <p style="text-align: center;">
             As a wizard mechanic, use your powers of fire and ice to fix all the machines in this 3D puzzle-platformer!
           </p>
         </div>
       </a>
-      <br>
-      <a href="https://buckaroodle.itch.io/rogueshambo" class="project-link">
-        <div class="project Other">
+      <a href="portfolio/dontwakeup.html" class="project-link">
+        <div class="project Other hide-on-start">
           <div class="slideshowpic">
             <div class="slideshow-container" id="slideshow3">
               <div class="mySlides">
@@ -93,14 +133,31 @@
           <h2>
             Designer
           </h2>
-          <p style="text-indent:30px;">
-            I was one of two designers for this game created during a 48 hour game jam. Preston Ferrer and I worked together to design the layout of the house you traverse. After getting the assets, I created the house in Unity. I had to get creative in some areas as I wasn't given all the assets we had needed, so in many places I had to improvise and "create" new assets by combining different assets together.
-          </p>
-          <p>
-            You can view and download the game on itch.io <a href="https://monopopo.itch.io/dont-wake-up">here.</a>
+          <p style="text-align: center;">
+            Complete various tasks in the middle of the night before you fully wake back up in this short 3D horror game!
           </p>
         </div>
-      </a>   
+      </a>
+      <a href="portfolio/fsh.html" class="project-link">
+        <div class="project Other hide-on-start">
+          <div class="slideshowpic">
+            <div class="slideshow-container" id="slideshow3">
+              <div class="mySlides">
+                <img src="portfolio/portfolio_fsh1.png" alt="Fsh title screen" style="width:384px;height:216px;">
+              </div>
+            </div>
+          </div>
+          <h1>
+            FSH - GDK Joint Jam 2024
+          </h1>
+          <h2>
+            Desginer
+          </h2>
+          <p style="text-align: center;">
+            Traverse the depths of the ocean to find your missing eyes in this 2D platformer!
+          </p>
+        </div>
+      </a>
     </div>
   </body>
 </html>
