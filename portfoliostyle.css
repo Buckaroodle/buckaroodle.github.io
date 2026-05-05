@@ -236,6 +236,7 @@ div.updatesedited {
 
 /* FADE ANIMATION */
 .project {
+    position: relative;
     background-color: #20203d;
     padding: 25px;
     border-radius: 15px;
@@ -243,6 +244,22 @@ div.updatesedited {
     border-color: rgb(228, 217, 255);
     overflow: hidden;
     transition: transform 0.3s ease; /* Fixed the comma to a period */
+}
+
+.project-tag {
+    position: absolute;
+    top: 15px;          /* Distance from top */
+    left: 15px;         /* Distance from left */
+    background-color: rgba(164, 195, 226, 0.9); /* Match your theme blue */
+    color: #20203d;     /* Dark text for contrast */
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 10;        /* Ensures it stays above the image */
+    pointer-events: none; /* Allows clicks to pass through to the project link */
+    border: 1px solid white;
 }
 
 .project-wrapper {

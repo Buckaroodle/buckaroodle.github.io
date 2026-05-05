@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ball-atro</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Ball-atro</h1>
+      <h2>Creator</h2>
+      <h2>Jan 2025</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_ballatro1.jpg">
+        <img class="mySlides" src="portfolio_ballatro2.jpg">
+        <img class="mySlides" src="portfolio_ballatro3.jpg">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Type:</b> Physical/Card
+      </p>
+      <p>
+        Ball-atro was a physical game I created to be played at any mini golf course. I took inspiration from various roguelikes like Balatro to create a custom deck of cards that players will draw from during a game of mini golf to provide a new and unique challenge. Certain cards allow for players to gain unique advantages during the game like teeing off closer to the hole or subtracting strokes from their score when a hole-in-one is achieved. Other cards allow for one-time powerups like do-over shots and standing on the course during another player's shot.
+      </p>
+      <p>
+        A major design challenge for me while making this game was trying to keep the game as simple as possible for players. In Balatro, for example, you have different slots for keeping consumable and non-consumable cards; in my game, you can only hold a total of 4 cards at once at any time, regardless of consumability. This simplicity is also apparent in the mechanic of "bonus points" that are awarded during the game. I wanted a way to allow players to subtract points from their score, but this led to confusion and errors when scoring for a certain hole. "Bonus points" were my solution to that problem, and they are tallied at the bottom of the scorecard and subtracted from a player's score at the end of the game. Another design challenge that came up was keeping the speed of the game about the same as a normal round of mini golf. This game is to be played at a standard publically accessible mini golf course, and so it was imperative that any gameplay modifications were small enough as to not prevent a group from holding up other non-Ball-atro players. Various powerup ideas had to be scrapped for these reasons.
+      </p>
+      <p>
+        This game requires my handmade cards to play. However, <a href="ballatro.pdf">click here to download a PDF of the rulesheet!</a>
+      </p>
+    </div>
+  </body>
+</html>
