@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buck's Game Night: A Balatro Mod</title>
+    <link rel="stylesheet" type="text/css" href="../portfoliostyle.css" />
+    <script src="portfolioslideshow.js"></script>
+  </head>
+  <body>
+    <div class="marginthing">
+      <button
+        onclick= "window.history.back()"> Back
+      </button>
+      <h1>Buck's Game Night: A Balatro Mod</h1>
+      <h2>Creator</h2>
+      <h2>May 2026</h2>
+      <div class="slideshow-container">
+        <img class="mySlides" src="portfolio_bgnbalatro1.png">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+      <p style="text-indent:30px;">
+        <b>Game Type:</b> Mod
+      </p>
+      <p>
+        Buck's Game Night is a mod for the game Balatro that I created both for my own enjoyment and as a way to learn and practice coding in Lua. While a good amount of coding for this project was done using tutorials and following in-depth Balatro mod documentation, it was a good exercise for me to practice with standard coding logic. Many of my custom Jokers had to be playtested thouroughly to make sure they didn't break or crash the game in certain scenarios. This was also a good exercise in my art abilities, as almost all of the sprites included in this mod were created by me, either by remixing existing sprites, pixel art-ifying existing designs from other games, or creating a sprite or design entirely from scratch. I plan on continuing to work on this project because I've had a really fun time working on it and have more ideas I'd like to try and code.
+      </p>
+      <p>
+        This mod requires a PC version of the game "Balatro". Tutorials for how to setup Balatro mods can be found online. <a href="https://github.com/Buckaroodle/GameNightMod">Click here to access the GitHub page for my mod!</a>
+      </p>
+    </div>
+  </body>
+</html>
